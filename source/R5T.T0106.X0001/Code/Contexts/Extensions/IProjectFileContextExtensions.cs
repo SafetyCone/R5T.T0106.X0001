@@ -14,5 +14,10 @@ namespace System
         {
             Instances.ProjectOperator.DeleteInitialClass1File(projectFileContext);
         }
+
+        public static void DeleteInitialProgramFile(this IProjectFileContext projectFileContext)
+        {
+            Instances.ProjectOperator.DeleteInitialProgramFile(projectFileContext);
+        }
     }
 }

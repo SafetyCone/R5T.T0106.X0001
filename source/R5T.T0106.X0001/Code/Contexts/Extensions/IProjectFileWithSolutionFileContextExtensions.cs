@@ -50,7 +50,7 @@ namespace System
                 });
         }
 
-        public static async Task CreateProjectFile(this IProjectFileWithSolutionFileContext projectFileContext,
+        public static async Task CreateProgramFile(this IProjectFileWithSolutionFileContext projectFileContext,
             Func<ProjectSubFilePathContext, Task> programFileContextAction = default)
         {
             await projectFileContext.InCodeDirectoryFilePathContext(
