@@ -29,7 +29,7 @@ namespace System
         public static async Task CreateIServicActionExtensionsFile(this IProjectFileWithSolutionFileContext projectFileContext,
             Func<ProjectSubFilePathContext, Task> iServiceActionExtensionsFileContextAction = default)
         {
-            await projectFileContext.InExtensionsDirectoryPathContext(
+            await projectFileContext.InBasesExtensionsDirectoryPathContext(
                 async extensionsDirectoryPathContext =>
                 {
                     await extensionsDirectoryPathContext.InProjectSubFilePathContex(
