@@ -1,18 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>1591;1573</NoWarn>
   </PropertyGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\..\..\R5T.T0106\source\R5T.T0106.X000\R5T.T0106.X000.csproj" />
     <ProjectReference Include="..\..\..\R5T.T0113.X0001\source\R5T.T0113.X0001\R5T.T0113.X0001.csproj" />
     <ProjectReference Include="..\..\..\R5T.X0003\source\R5T.X0003.X003\R5T.X0003.X003.csproj" />
   </ItemGroup>
-
   <ItemGroup>
     <Folder Include="Code\Contexts\Classes\" />
     <Folder Include="Code\Contexts\Interfaces\" />
   </ItemGroup>
-
 </Project>
